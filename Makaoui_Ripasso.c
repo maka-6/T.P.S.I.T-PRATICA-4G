@@ -19,9 +19,9 @@ int main(){
 
     int m;
     do {
-        printf("\nBenvenuto\nInserisci un numero maggiore di 9:\n-> ");
+        printf("\nBenvenuto\nInserisci un numero max 10:\n-> ");
         scanf("%d", &m);
-    } while ( m < 1 );
+    } while ( m > 10 );
 
     int matrix[m][m];
     int i, j;
@@ -45,9 +45,7 @@ int main(){
     printf("\nProduttoria diagonale secondaria: %d", prod);
 
     for (i = 1; i < m; ++i) {
-        for (j = 0; j < m-1; ++j) {
-            if ( i == j )
-                continue;
+        for (j = 0; j < i; ++j) {
             if ( matrix[i][j] % 2 == 0 )
                 printf("\n pari: %d",matrix[i][j]);
         }
