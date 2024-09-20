@@ -21,7 +21,7 @@ int main(){
         scanf("%d",&r);
         printf("nInserisci n colonne:\n->");
         scanf("%d",&c);
-    } while ( r > 20 || c > 20 || ( r < 0 || c < 0 ) );
+    } while ( r > MAX || c > MAX || ( r < MIN || c < MIN ) );
 
     int rng;
     printf("\nInserisci range numeri:\n->");
