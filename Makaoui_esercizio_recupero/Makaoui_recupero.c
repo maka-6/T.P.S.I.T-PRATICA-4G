@@ -36,7 +36,7 @@ int seeLastPurchase();
 
 int addTailProduct();
 
-int main() {
+int main(){
 
     int c;
     pointHead = (Node*) malloc(sizeof(Node));
