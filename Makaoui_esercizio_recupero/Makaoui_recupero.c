@@ -171,13 +171,12 @@ int addTailProduct(){
     } else {
 
         Node *pointTemp = pointHead->pointNext;
-        while ( pointTemp != NULL ){
+        while ( pointTemp->pointNext != NULL ){
 
-            pointNew->pointNext = pointHead->pointNext;
-            pointHead->pointNext = pointNew;
             pointTemp = pointTemp->pointNext;
 
         }
+        pointTemp->pointNext = pointNew;
     }
     return 1;
 }
