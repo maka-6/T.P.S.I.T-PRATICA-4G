@@ -1,3 +1,10 @@
+/*
+    Autore: Makaoui Youness
+    Data: 27/04/2025
+    Luogo: Home
+    Descrizione: gestione di un conto e tre soci con l'utilizzo di thread e monitor di java
+ */
+
 public class Banca {
     public static void main(String[] args) {
         ContoBancario conto = new ContoBancario();
